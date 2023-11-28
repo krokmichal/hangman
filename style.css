@@ -1,0 +1,201 @@
+    /*      GRA      */
+
+    /* @import url('https://fonts.googleapis.com/css2?family=Creepster&family=Montserrat:wght@400;700&display=swap'); */
+
+body {
+    background-color: black;
+    color: white;
+    font-size: 4rem;
+    width: 100%;
+}
+
+.menuBody {
+    /* background-image: url('img/hangman.jpg'); */
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+#board {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+#password {
+    text-align: center;
+
+    width: 100%;
+}
+
+#graphic{
+    width: 50%;
+}
+
+#alphabet {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 50%
+}
+
+#licznik {
+    font-size: 2rem;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.litera {
+    font-size: 2rem;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+    min-width: 50px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.litera:hover {
+    box-shadow: 0px 0px 12px white;
+    transition: 0.5s;
+}
+
+#exit {
+    display: flex;
+    font-size: 1rem;
+    margin-top: 50px;
+    text-align: center;
+    justify-content: center;
+    padding: 5px;
+    border: solid 1px red;
+    background-color: red;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 40%;
+    margin-right: 40%;
+}
+
+#exit:hover {
+    font-size: 1.5rem;
+    transition: 0.5s;
+}
+
+
+
+
+/*  STRONA GŁÓWNA  */
+
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+
+#title {
+    text-align: center;
+    color: #999;
+    font-size: 8rem;
+    font-family: 'Creepster', cursive;
+}
+
+#newGame {
+    display: flex;
+    font-size: 2.5rem;
+    margin-top: 200px;
+    text-align: center;
+    justify-content: center;
+    margin-right: 35%;
+    margin-left: 35%;
+    border: solid white 1px;
+    cursor: pointer;
+    box-shadow: 0 0 20px white;
+}
+
+#newGame:hover {
+    box-shadow: 0 0 30px red;
+    color: #999;
+    transition: 0.5s;
+}
+
+
+
+/*  TRYB GRY  */
+
+
+#gameMode {
+    text-align: center;
+    border: 1px solid white;
+    margin-left: 35%;
+    margin-right: 35%;
+    margin-top: 50px;
+}
+
+#tryby {
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}
+
+.tryb {
+    font-size: 2rem;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 80px;
+    cursor: pointer;
+    box-shadow: 0 0 20px white;
+    width:50%;
+    border: 1px solid white;
+    text-align: center;
+    align-items: center;
+    justify-content: center;  
+}
+
+.tryb:hover {
+    box-shadow: 0 0 30px red;
+    color: #999;
+    transition: 0.5s;
+}
+
+.clicked {
+    box-shadow: 0 0 30px red;
+    color: #999;
+    transition: 0.5s;
+}
+
+#wordField {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#divCategories {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cat {
+    font-size: 1.3rem;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 30px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 1px solid white;
+    text-align: center;
+    width: 60%;
+    padding: 5px;
+}
+
+.cat:hover {
+    box-shadow: 0 0 30px violet;
+    color: #999;
+    transition: 0.5s;
+}
+
+#catRandom {
+    color: blue;
+    width: 20%;
+}
+
+
