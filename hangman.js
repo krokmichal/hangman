@@ -1,4 +1,4 @@
-let clickSound = new Audio("/sounds/click.wav");
+let clickSound = new Audio("sounds/click.wav");
 
 //          OBSŁUGA TRYBU "WPISZ SŁOWO"
 
@@ -274,8 +274,8 @@ var liczbaRuchow = 0;
 var gameOver = false;
 
 // Inicjalizacja elementów audio dla różnych zdarzeń w grze
-let gameOverSound = new Audio("/sounds/gameover.wav");
-let gameCompletedSound = new Audio("/sounds/gamecompleted.wav");
+let gameOverSound = new Audio("sounds/gameover.wav");
+let gameCompletedSound = new Audio("sounds/gamecompleted.wav");
 
 // Licznik błędów
 
@@ -326,7 +326,7 @@ function wypiszHaslo() {
 
   document.querySelector("#password").innerHTML = haslo1;
   document.querySelector("#graphic").innerHTML =
-    '<img src="/img/s' + liczbaBledow + '.jpg" alt="Stan gry">';
+    '<img src="img/s' + liczbaBledow + '.jpg" alt="Stan gry">';
 
   wypiszLitery();
   document.querySelector("#licznik").innerHTML =
@@ -389,7 +389,7 @@ function sprawdz(nr) {
         document.querySelector("#lit" + nr + "").style.cursor = "default";
         liczbaBledow++;
         document.querySelector("#graphic").innerHTML =
-          '<img src="/img/s' +
+          '<img src="img/s' +
           liczbaBledow +
           '.jpg" alt="Stan gry:' +
           liczbaBledow +
