@@ -249,6 +249,11 @@ body {
     font-size: 5rem;
    }
 
+   img {
+    width: 90%;
+    height: 90%;
+   }
+
    #gameMode {
     font-size: 2rem;
     margin: 80px 40px 20px 30px;
@@ -286,7 +291,7 @@ body {
     }
 
     #graphic {
-        margin-right: 160px;
+        margin-right: 0px;
     }
 
     #exit {
