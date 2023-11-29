@@ -1,23 +1,16 @@
     /*      GRA      */
 
-    /* @import url('https://fonts.googleapis.com/css2?family=Creepster&family=Montserrat:wght@400;700&display=swap'); */
-
 body {
     background-color: black;
     color: white;
     font-size: 4rem;
     width: 100%;
-}
-
-.menuBody {
-    /* background-image: url('img/hangman.jpg'); */
-    background-repeat: no-repeat;
-    background-size: 100%;
+    font-family:Georgia, 'Times New Roman', Times, serif
 }
 
 #board {
     display: flex;
-    width: 100%;
+    width: 95%;
     justify-content: center;
     align-items: center;
     margin-top: 50px;
@@ -126,6 +119,8 @@ body {
     margin-left: 35%;
     margin-right: 35%;
     margin-top: 50px;
+    padding: 10px;
+    border-radius: 20px;
 }
 
 #tryby {
@@ -167,6 +162,24 @@ body {
     align-items: center;
 }
 
+#inputWord {
+    margin-top: 20px;
+}
+
+#inputWord, #startB {
+    font-size: 2rem;
+}
+
+#startB {
+    margin-top: 20px;
+    color: white;
+    background-color: black;
+    border: 2px solid white;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+
 #divCategories {
     display: flex;
     flex-direction: column;
@@ -194,8 +207,102 @@ body {
 }
 
 #catRandom {
-    color: blue;
+    color: red;
     width: 20%;
 }
 
 
+
+.tryb {
+    padding: 10px;
+    border-radius: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+
+    #inputWord, #startB {
+        font-size: 1.5rem;
+    }
+    
+    #startB {
+        margin-top: 20px;
+        color: white;
+        background-color: black;
+        border: 2px solid white;
+        border-radius: 20px;
+        padding: 10px;
+    }
+
+    #board {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    #graphic {
+        margin-right: 80px;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+
+#title {
+    font-size: 5rem;
+   }
+
+   #gameMode {
+    font-size: 2rem;
+    margin: 80px 40px 20px 30px;
+   }
+
+   #tryby div {
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 40px 0px 0px 70px;
+   }
+
+   #tryby {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   }
+
+   #catRandom {
+    width: 40%;
+   }
+
+   #board {
+    width: 100%;
+    flex-direction: column;
+    }
+
+    #alphabet {
+        margin-left: 100px;
+        width: 100%;
+    }
+
+    #graphic {
+        margin-right: 160px;
+    }
+
+    #exit {
+        width: 50%;
+        margin: 40px 0 0 100px;
+    }
+
+}
+
+@media only screen and (max-width: 320px) {
+    #tryby div {
+        font-size: 1.1rem;
+        margin: 40px 0px 0px 50px;
+       }
+
+       #inputWord, #startB {
+        font-size: 1.3rem;
+    }
+}

@@ -21,7 +21,7 @@ exitButton.innerHTML = "WYJDŹ Z GRY";
 exitButton.addEventListener("click", exitGame);
 
 function exitGame() {
-  window.location.href = "hangman.html";
+  window.location.href = "index.html";
 }
 
 let input = '<input id="inputWord" type="text"></input>';
